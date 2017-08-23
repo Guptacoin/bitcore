@@ -23,7 +23,7 @@ exports.livenet = {
     bits: '1e0ffff0',
   },
   dnsSeeds: [
-    'seed.aur.co.vu'
+   
   ],
   defaultClientPort: 1280
 };
