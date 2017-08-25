@@ -28,7 +28,7 @@ describe('Connection', function() {
     it('should create a proxied socket if instructed', function() {
       var mPeer;
       var c = new Connection(null, mPeer, {
-        proxy: { host: 'localhost', port: 9050 }
+        proxy: { host: 'localhost', port: 1280 }
       });
       should.exist(c.socket);
     });
