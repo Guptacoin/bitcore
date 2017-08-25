@@ -17,15 +17,15 @@ describe('Peer', function() {
     should.exist(Peer);
   });
   it('should be able to create instance', function() {
-    var p = new Peer('localhost', 8333);
+    var p = new Peer('localhost', 1280);
     should.exist(p);
   });
   it('should be able to create instance', function() {
-    var p = new Peer('localhost:8333');
+    var p = new Peer('localhost:1280');
     should.exist(p);
   });
   it('should be able to create instance', function() {
-    var p = new Peer('localhost:8333');
+    var p = new Peer('localhost:1280');
     var p2 = new Peer(p);
     should.exist(p2);
   });
@@ -35,11 +35,11 @@ describe('Peer', function() {
     });
   });
   it('should be able to create instance', function() {
-    var p = new Peer('localhost', 8333);
-    p.toString().should.equal('localhost:8333');
+    var p = new Peer('localhost', 1280);
+    p.toString().should.equal('localhost:1280');
   });
   it('check host as buffer', function() {
-    var p = new Peer('127.0.0.1', 8333);
+    var p = new Peer('127.0.0.1', 1280);
     p.getHostAsBuffer().toString('hex').should.equal('7f000001');
   });
 });
